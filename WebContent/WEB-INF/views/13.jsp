@@ -43,6 +43,7 @@
 			<th>count</th>
 		</tr>
 		<c:forEach items="${requestScope.userList}" var="userVo" varStatus="status">
+		<!-- begin="", end="" 를 통해 몇번방부터 시작하는지, 몇번 방까지 반복할건지 설정 가능-->
 			<tr>
 				<td>${userVo.no}</td>
 				<td>${userVo.name}</td>
